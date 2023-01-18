@@ -5,16 +5,28 @@ var upperCase = ["A", "B", "C","D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 var selected = []
+var passwordLength 
+var passwordLengthPrompt = function() {
+  var lengthResponse = prompt("What do you want to be the password length?");
+  if (lengthResponse >= 8 && lengthResponse <= 128) {
+    passwordLength = lengthResponse
+  }
+  else {
+    alert("Pick a password between 8 to 128 characters")
+    generatePassword();
+  }
+};
 // Write password to the #password input
 function generatePassword () {
   selected = []
-  var passwordLength = prompt("What do you want to be the password length?");
+  
+  passwordLengthPrompt();
   var includeLower = confirm("Do you want to include lower case?");
   var includeUpperCase = confirm("Do you want to include upper case letter?");
   var includeNumbers = confirm("Do you want to include number?");
   var includeSpecial = confirm("Do you want to include special characters?");
 
-  console.log(passwordLength);
+  //console.log(passwordLength());
 
   console.log([includeLower, includeUpperCase, includeNumbers, includeSpecial]);
 
