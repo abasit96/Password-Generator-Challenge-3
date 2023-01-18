@@ -31,4 +31,4 @@ THEN the password is either displayed in an alert or written to the page
 ![Screenshot](Password Generator Screenshot.png)
 
 ###### Deployment Page
-https://abasit96.github.io/Challenge-2/
+https://abasit96.github.io/Password-Generator-Challenge-3/
