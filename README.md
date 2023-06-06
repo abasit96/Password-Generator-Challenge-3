@@ -28,7 +28,7 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 ##### Screenshot
-![Screenshot](Password Generator Screenshot.png)
+![Screenshot](./Password%20Generator%20Screenshot.png)
 
 ###### Deployment Page
 https://abasit96.github.io/Password-Generator-Challenge-3/
